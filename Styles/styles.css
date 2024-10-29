@@ -76,6 +76,7 @@ header img {
 }
 
 .iconmenu {
+  display: none;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -352,6 +353,12 @@ footer {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .iconmenu {
+    display: flex;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     justify-content: space-between;
@@ -368,7 +375,6 @@ footer {
     background: #121212 url("") no-repeat center top/cover;
     justify-content: center;
   }
-
   .navbar-desktop {
     display: none;
   }
